@@ -133,9 +133,9 @@ header = """
 matchups_page = """
 ---
 
-## ⚔️ Matchups
-| Match             | Sport | Status | Score | 
-|-------------------|-------|--------|-------| 
+## ⚔️ Matchups \n
+| Match             | Sport | Status | Score | \n
+|-------------------|-------|--------|-------| \n
 """
 
 scores = """
