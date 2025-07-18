@@ -217,7 +217,7 @@ def main():
 
         # Optional: Auto-push to GitHub Pages
         subprocess.run(["git", "add", "."], check=True)
-        subprocess.run(["git", "commit", "-m", "🔄 Tournament update"], check=True)
+        subprocess.run(["git", "commit", "-m", "🔄 automatic Tournament update"], check=True)
         subprocess.run(["git", "push"], check=True)
 
 if __name__ == "__main__":
