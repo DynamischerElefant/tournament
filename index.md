@@ -16,7 +16,7 @@
 ## ⚔️Matchups
 
 | Match             | Sport | Status | Score | 
-|-------------------|-------| Finished | 1 - 3 |
-| Red vs Blue       | Volleyball| 1 - 4 |
-| Yellow vs Green   | Pingpong   | 3 - 0 |
+|-------------------|-------|--------|-------| 
+| Red vs Blue       | Volleyball| Finished | 1 - 3 |
+| Yellow vs Green   | Pingpong   |Finished | 3 - 0 |
 
