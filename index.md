@@ -1,9 +1,3 @@
-
----
-layout: default
-title: Tournament Hub
----
-
 # 🏆 Welcome to the Tournament
 
 Stay up to date with the schedule, scores, and standings.
