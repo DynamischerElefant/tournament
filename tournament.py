@@ -216,9 +216,9 @@ def main():
         write_md(teams, matches)
 
         # Optional: Auto-push to GitHub Pages
-        subprocess.run(["git", "add", "."], check=True)
-        subprocess.run(["git", "commit", "-m", "🔄 automatic Tournament update"], check=True)
-        subprocess.run(["git", "push"], check=True)
+        #subprocess.run(["git", "add", "."], check=True)
+        #subprocess.run(["git", "commit", "-m", "🔄 automatic Tournament update"], check=True)
+        #subprocess.run(["git", "push"], check=True)
 
 if __name__ == "__main__":
     main()
