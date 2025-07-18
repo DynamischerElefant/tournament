@@ -4,6 +4,19 @@ Stay up to date with the schedule, scores, and standings.
 
 ---
 
+## 🧮 Points Progress
+
+**Team Red**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 80%; background-color: red; height: 100%; border-radius: 8px;"></div>
+</div>
+
+**Team Blue**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 40%; background-color: blue; height: 100%; border-radius: 8px;"></div>
+</div>
+---
+
 ## 📅 Schedule
 
 - Red vs Blue — July 20  
