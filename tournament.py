@@ -149,7 +149,7 @@ scores = """
 """
 
 def write_md(teams, matches, output_file="index.md"):
-    with open(output_file, "w") as file:
+    with open(output_file, "w", encoding="utf-8") as file:
         file.write(header)
         for team in teams:
             file.write(f"""
