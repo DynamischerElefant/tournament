@@ -1,0 +1,17 @@
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment
+venv/
+
+# Ignore IDE configs
+.idea/
+
+# Ignore CSVs if you don't want to commit them
+# teams.csv
+# matches.csv
+
+# Ignore generated markdown
+# index.md
