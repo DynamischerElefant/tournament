@@ -34,6 +34,8 @@ def get_team_index(teams, name):
     return -1
 
 def set_points(teams, matches):
+    for team in teams:
+        team["points"] = 0
     for match in matches:
         if match["points1"] > match["points2"]:
             idx = get_team_index(teams, match["team1"])
