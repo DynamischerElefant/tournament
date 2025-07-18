@@ -17,7 +17,6 @@
 ## ⚔️ Matchups 
 
 | Match             | Sport | Status | Score | 
-
 |-------------------|-------|--------|-------|
 | Macher vs Mucker | Spikeball | Finished | 5 - 4 |
 | Mucker vs Macher | Volley | Finished | 12 - 21 |

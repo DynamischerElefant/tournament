@@ -134,7 +134,7 @@ matchups_page = """
 ---
 
 ## ⚔️ Matchups \n
-| Match             | Sport | Status | Score | \n
+| Match             | Sport | Status | Score | 
 |-------------------|-------|--------|-------|
 """
 
