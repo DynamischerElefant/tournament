@@ -157,7 +157,7 @@ def write_md(teams, matches, output_file="index.md"):
             file.write(f"""
 **Team {team["name"]}: {team["points"]} Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: {team["points"]/max((len(matches) * 3), 1)}%; background-color: {team["color"]}; height: 100%; border-radius: 8px;"></div>
+  <div style="width: {(team["points"]/max((len(matches) * 3), 1))*100}%; background-color: {team["color"]}; height: 100%; border-radius: 8px;"></div>
 </div>
             """)
         file.write(matchups_page)
@@ -217,10 +217,11 @@ def main():
         save_matches_to_csv(matches)
         write_md(teams, matches)
 
+    if args.rebuild:
         # Optional: Auto-push to GitHub Pages
-        #subprocess.run(["git", "add", "."], check=True)
-        #subprocess.run(["git", "commit", "-m", "🔄 automatic Tournament update"], check=True)
-        #subprocess.run(["git", "push"], check=True)
+        subprocess.run(["git", "add", "."], check=True)
+        subprocess.run(["git", "commit", "-m", "🔄 automatic Tournament update"], check=True)
+        subprocess.run(["git", "push"], check=True)
 
 if __name__ == "__main__":
     main()
