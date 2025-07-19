@@ -9,7 +9,7 @@
             
 **Team Supanika: 3 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 100.0%; background-color: green; height: 100%; border-radius: 8px;"></div>
+  <div style="width: 33.33333333333333%; background-color: green; height: 100%; border-radius: 8px;"></div>
 </div>
             
 **Team Mucker: 0 Points**

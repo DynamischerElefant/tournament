@@ -143,10 +143,7 @@ def write_md(teams, matches, output_file="index.md"):
         file.write(header)
         teams.sort(key=lambda t: t["points"],reverse=True)
         for team in teams:
-            match_count = 0
-            for match in matches:
-                if match["team1"] == team["name"] or match["team2"] == team["name"]:
-                    match_count += 1
+            match_count = len(matches)
             if match_count == 0: # avoiding zero division
                 match_count = 1
             file.write(f"""
