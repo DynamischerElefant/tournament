@@ -1,9 +1,19 @@
 # 🏆 Tournament
 ## 🏅 Player Rankings
 
+**Minh: 12 Points**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 60.0%; background-color: red; height: 100%; border-radius: 8px;"></div>
+</div>
+            
 **Leon: 12 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
   <div style="width: 60.0%; background-color: skyblue; height: 100%; border-radius: 8px;"></div>
+</div>
+            
+**Daniel: 12 Points**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 60.0%; background-color: purple; height: 100%; border-radius: 8px;"></div>
 </div>
             
 **Philip: 12 Points**
@@ -11,19 +21,9 @@
   <div style="width: 60.0%; background-color: coral; height: 100%; border-radius: 8px;"></div>
 </div>
             
-**Minh: 9 Points**
-<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 45.0%; background-color: red; height: 100%; border-radius: 8px;"></div>
-</div>
-            
 **Mahdi: 9 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
   <div style="width: 45.0%; background-color: tomato; height: 100%; border-radius: 8px;"></div>
-</div>
-            
-**Daniel: 9 Points**
-<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 45.0%; background-color: purple; height: 100%; border-radius: 8px;"></div>
 </div>
             
 **Marcel: 9 Points**
@@ -58,7 +58,7 @@
 
 | Team 1                | Team 2                | Sport     | Status   | Score     |
 |-----------------------|-----------------------|-----------|----------|-----------|
-| Raphi & Marcel        | Minh & Daniel         | Fifa      | Scheduled | -         |
+| Raphi & Marcel        | Minh & Daniel         | Fifa      | Finished | 1 - 2     |
 | Lauber & Mahdi        | Emil & Philip         | Fifa      | Finished | 3 - 0     |
 | Lauber &              | Marcel &              | Ball      | Finished | 3 - 1     |
 | Daniel & Leon         | Anh Tuan & Emil       | Ball      | Finished | 3 - 1     |
