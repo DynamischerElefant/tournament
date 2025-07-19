@@ -1,9 +1,14 @@
 # 🏆 Tournament
 ## 🏅 Player Rankings
 
-**Philip: 9 Points**
+**Philip: 12 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 45.0%; background-color: coral; height: 100%; border-radius: 8px;"></div>
+  <div style="width: 60.0%; background-color: coral; height: 100%; border-radius: 8px;"></div>
+</div>
+            
+**Leon: 9 Points**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 45.0%; background-color: skyblue; height: 100%; border-radius: 8px;"></div>
 </div>
             
 **Minh: 6 Points**
@@ -16,14 +21,14 @@
   <div style="width: 30.0%; background-color: lime; height: 100%; border-radius: 8px;"></div>
 </div>
             
-**Leon: 6 Points**
-<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 30.0%; background-color: skyblue; height: 100%; border-radius: 8px;"></div>
-</div>
-            
 **Daniel: 6 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
   <div style="width: 30.0%; background-color: purple; height: 100%; border-radius: 8px;"></div>
+</div>
+            
+**Marcel: 6 Points**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 30.0%; background-color: seagreen; height: 100%; border-radius: 8px;"></div>
 </div>
             
 **Mahdi: 3 Points**
@@ -36,19 +41,14 @@
   <div style="width: 15.0%; background-color: navy; height: 100%; border-radius: 8px;"></div>
 </div>
             
-**Marcel: 3 Points**
+**Emil: 3 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 15.0%; background-color: seagreen; height: 100%; border-radius: 8px;"></div>
+  <div style="width: 15.0%; background-color: gold; height: 100%; border-radius: 8px;"></div>
 </div>
             
 **Lauber: 0 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
   <div style="width: 0.0%; background-color: orange; height: 100%; border-radius: 8px;"></div>
-</div>
-            
-**Emil: 0 Points**
-<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 0.0%; background-color: gold; height: 100%; border-radius: 8px;"></div>
 </div>
             
 ---
@@ -59,8 +59,8 @@
 | Team 1                | Team 2                | Sport     | Status   | Score     |
 |-----------------------|-----------------------|-----------|----------|-----------|
 | Emil & Marcel         | Anh Tuan & Lauber     | Spike     | Scheduled | -         |
-| Raphi & Daniel        | Philip & Leon         | Spike     | Scheduled | -         |
-| Emil & Marcel         | Mahdi & Minh          | Spike     | Scheduled | -         |
+| Raphi & Daniel        | Philip & Leon         | Spike     | Finished | 3 - 8     |
+| Emil & Marcel         | Mahdi & Minh          | Spike     | Finished | 8 - 6     |
 | Philip & Leon         | Anh Tuan & Lauber     | Spike     | Finished | 8 - 3     |
 | Mahdi & Minh          | Raphi & Daniel        | Spike     | Finished | 4 - 8     |
 | Emil & Lauber         | Mahdi & Raphi         | Volley    | Finished | 7 - 9     |
