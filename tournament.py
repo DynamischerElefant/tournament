@@ -138,31 +138,25 @@ matchups_page = """
 |-------------------|-------|--------|-------|
 """
 
-scores = """
-**Team Red: 8 Points**
-<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 80%; background-color: red; height: 100%; border-radius: 8px;"></div>
-</div>
-
-**Team Blue: 4 Points**
-<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 40%; background-color: blue; height: 100%; border-radius: 8px;"></div>
-</div>
-"""
-
 def write_md(teams, matches, output_file="index.md"):
     with open(output_file, "w", encoding="utf-8") as file:
         file.write(header)
+        teams.sort(key=lambda t: t["points"],reverse=True)
         for team in teams:
+            match_count = 0
+            for match in matches:
+                if match["team1"] == team["name"] or match["team2"] == team["name"]:
+                    match_count += 1
+            if match_count == 0: # avoiding zero division
+                match_count = 1
             file.write(f"""
 **Team {team["name"]}: {team["points"]} Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: {(team["points"]/max((len(matches) * 3), 1))*100}%; background-color: {team["color"]}; height: 100%; border-radius: 8px;"></div>
+  <div style="width: {(team["points"]/(match_count * 3))*100}%; background-color: {team["color"]}; height: 100%; border-radius: 8px;"></div>
 </div>
             """)
         file.write(matchups_page)
         for match in reversed(matches):
-            score = ""
             if match["status"] == "Finished":
                 score = f"{match['points1']} - {match['points2']}"
             else:
