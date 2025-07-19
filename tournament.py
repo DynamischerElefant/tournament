@@ -122,6 +122,7 @@ def update_match_score(matches):
 
         match["points1"] = new_score1
         match["points2"] = new_score2
+        match["status"] = "Finished"
         print("✅ Score updated.")
     except (IndexError, ValueError):
         print("❌ Invalid selection or input.")
@@ -169,7 +170,7 @@ def write_md(teams, matches, output_file="index.md"):
             file.write(f"""
 **Team {team["name"]}: {team["points"]} Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: {(team["points"]/(match_count * 3))*100}%; background-color: {team["color"]}; height: 100%; border-radius: 8px;"></div>
+  <div style="width: {(team["points"]/20)}%; background-color: {team["color"]}; height: 100%; border-radius: 8px;"></div>
 </div>
             """)
         file.write(matchups_page)
@@ -210,10 +211,10 @@ def main():
         teams = add_team(teams, name, color)
 
     elif args.add_match:
-        team1 = input("Team 1: ")
-        team2 = input("Team 2: ")
+        team1 = input(f"Team 1({[t["name"] for t in teams]}): ")
+        team2 = input(f"Team 2({[t["name"] for t in teams]}): ")
         sport = input("Sport: ")
-        bracket = input("Bracket: ")
+        bracket = input("Bracket (Semis, Finals or Losers): ")
         status = "Scheuduled"
         matches = add_match(matches, team1, team2, sport, status, bracket)
 
