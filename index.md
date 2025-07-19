@@ -6,6 +6,26 @@
   <div style="width: 15.0%; background-color: red; height: 100%; border-radius: 8px;"></div>
 </div>
             
+**Anh Tuan: 3 Points**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 15.0%; background-color: navy; height: 100%; border-radius: 8px;"></div>
+</div>
+            
+**Leon: 3 Points**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 15.0%; background-color: skyblue; height: 100%; border-radius: 8px;"></div>
+</div>
+            
+**Daniel: 3 Points**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 15.0%; background-color: purple; height: 100%; border-radius: 8px;"></div>
+</div>
+            
+**Marcel: 3 Points**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 15.0%; background-color: seagreen; height: 100%; border-radius: 8px;"></div>
+</div>
+            
 **Philip: 3 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
   <div style="width: 15.0%; background-color: coral; height: 100%; border-radius: 8px;"></div>
@@ -16,34 +36,14 @@
   <div style="width: 0.0%; background-color: tomato; height: 100%; border-radius: 8px;"></div>
 </div>
             
-**Anh Tuan: 0 Points**
-<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 0.0%; background-color: navy; height: 100%; border-radius: 8px;"></div>
-</div>
-            
 **Raphi: 0 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
   <div style="width: 0.0%; background-color: lime; height: 100%; border-radius: 8px;"></div>
 </div>
             
-**Leon: 0 Points**
-<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 0.0%; background-color: skyblue; height: 100%; border-radius: 8px;"></div>
-</div>
-            
 **Lauber: 0 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
   <div style="width: 0.0%; background-color: orange; height: 100%; border-radius: 8px;"></div>
-</div>
-            
-**Daniel: 0 Points**
-<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 0.0%; background-color: purple; height: 100%; border-radius: 8px;"></div>
-</div>
-            
-**Marcel: 0 Points**
-<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 0.0%; background-color: seagreen; height: 100%; border-radius: 8px;"></div>
 </div>
             
 **Emil: 0 Points**
@@ -58,5 +58,6 @@
 
 | Team 1                | Team 2                | Sport     | Status   | Score     |
 |-----------------------|-----------------------|-----------|----------|-----------|
-| Anh Tuan & Daniel     | Leon & Marcel         | Volley    | Scheduled | -         |
+| Emil & Lauber         | Anh Tuan & Daniel     | Volley    | Finished | 5 - 8     |
+| Anh Tuan & Daniel     | Leon & Marcel         | Volley    | Finished | 9 - 11    |
 | Mahdi & Raphi         | Philip & Minh         | Volley    | Finished | 8 - 10    |
