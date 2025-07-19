@@ -2,19 +2,19 @@
 # 🏆 Tournament
 ## 🏅 Rankings
 
-**Team Winners: 9 Points**
+**Team Winners: 3 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 0.45%; background-color: green; height: 100%; border-radius: 8px;"></div>
+  <div style="width: 15.0%; background-color: green; height: 100%; border-radius: 8px;"></div>
 </div>
             
-**Team Bombo: 6 Points**
+**Team Bombo: 2 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 0.3%; background-color: blue; height: 100%; border-radius: 8px;"></div>
+  <div style="width: 10.0%; background-color: blue; height: 100%; border-radius: 8px;"></div>
 </div>
             
-**Team Losers: 3 Points**
+**Team Losers: 1 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 0.15%; background-color: yellow; height: 100%; border-radius: 8px;"></div>
+  <div style="width: 5.0%; background-color: yellow; height: 100%; border-radius: 8px;"></div>
 </div>
             
 **Team Mahdi: 0 Points**

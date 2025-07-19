@@ -36,6 +36,8 @@ def get_team_index(teams, name):
     return -1
 
 def set_points(teams, matches):
+    for team in teams:
+        team["points"] = 0
     sports = defaultdict(list)
     for match in matches:
         sports[match["sport"]].append(match)
@@ -170,7 +172,7 @@ def write_md(teams, matches, output_file="index.md"):
             file.write(f"""
 **Team {team["name"]}: {team["points"]} Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: {(team["points"]/20)}%; background-color: {team["color"]}; height: 100%; border-radius: 8px;"></div>
+  <div style="width: {(team["points"]/20) * 100}%; background-color: {team["color"]}; height: 100%; border-radius: 8px;"></div>
 </div>
             """)
         file.write(matchups_page)
