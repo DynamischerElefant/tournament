@@ -1,28 +1,42 @@
+# 🏆 Tournament Standings
+## 🥇 Cumulative Rankings
 
-# 🏆 Tournament
-## 🏅 Rankings
+**Tester**: 0 Points
 
-**Team Macher: 6 Points**
-<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 66.66666666666666%; background-color: red; height: 100%; border-radius: 8px;"></div>
-</div>
-            
-**Team Supanika: 3 Points**
-<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 33.33333333333333%; background-color: green; height: 100%; border-radius: 8px;"></div>
-</div>
-            
-**Team Mucker: 0 Points**
-<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 0.0%; background-color: blue; height: 100%; border-radius: 8px;"></div>
-</div>
-            
+**Devs**: 0 Points
+
+**Tester2**: 0 Points
+
+**Devs2**: 0 Points
+
 ---
+## 🎮 Brackets
 
-## ⚔️ Matchups 
+### 🏟️ Volley
 
-| Match             | Sport | Status | Score | 
-|-------------------|-------|--------|-------|
-| Supanika vs Macher | Volley | Finished | 12 - 10 |
-| Macher vs Mucker | Spikeball | Finished | 5 - 4 |
-| Mucker vs Macher | Volley | Finished | 12 - 21 |
+```
+
+    ┌───── Semifinal ─────┐          ┌────── Final ──────┐
+    │ Tester     21       │          │                        │
+    │           vs         ├────┐    │   Tester            │
+    │ Devs       11       │    │    │                  │
+    └─────────────────────┘    │    │   vs              │
+                               ├────┤                    │
+    ┌───── Semifinal ─────┐    │    │   Tester2            │
+    │ Tester2    21       │    │    │                  │
+    │           vs         ├────┘    └──────────────────┘
+    │ Devs2      11       │
+    └─────────────────────┘
+
+```
+
+**🥉 3rd Place:** Devs vs Devs2 → -
+
+---
+## ⚔️ Matchups
+| Match | Sport | Status | Score |
+|-------|-------|--------|-------|
+| Tester vs Devs | Volley | Finished | 21 - 11 |
+| Tester2 vs Devs2 | Volley | Finished | 21 - 11 |
+| Tester vs Tester2 | Volley | Scheduled | - |
+| Devs vs Devs2 | Volley | Scheduled | - |
