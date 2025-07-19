@@ -1,42 +1,34 @@
-# 🏆 Tournament Standings
-## 🥇 Cumulative Rankings
 
-**Tester**: 0 Points
+# 🏆 Tournament
+## 🏅 Rankings
 
-**Devs**: 0 Points
-
-**Tester2**: 0 Points
-
-**Devs2**: 0 Points
-
+**Team Winners: 6 Points**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 50.0%; background-color: green; height: 100%; border-radius: 8px;"></div>
+</div>
+            
+**Team Bombo: 4 Points**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 33.33333333333333%; background-color: blue; height: 100%; border-radius: 8px;"></div>
+</div>
+            
+**Team Losers: 2 Points**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 16.666666666666664%; background-color: yellow; height: 100%; border-radius: 8px;"></div>
+</div>
+            
+**Team Mahdi: 0 Points**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 0.0%; background-color: red; height: 100%; border-radius: 8px;"></div>
+</div>
+            
 ---
-## 🎮 Brackets
 
-### 🏟️ Volley
+## ⚔️ Matchups 
 
-```
-
-    ┌───── Semifinal ─────┐          ┌────── Final ──────┐
-    │ Tester     21       │          │                        │
-    │           vs         ├────┐    │   Tester            │
-    │ Devs       11       │    │    │                  │
-    └─────────────────────┘    │    │   vs              │
-                               ├────┤                    │
-    ┌───── Semifinal ─────┐    │    │   Tester2            │
-    │ Tester2    21       │    │    │                  │
-    │           vs         ├────┘    └──────────────────┘
-    │ Devs2      11       │
-    └─────────────────────┘
-
-```
-
-**🥉 3rd Place:** Devs vs Devs2 → -
-
----
-## ⚔️ Matchups
-| Match | Sport | Status | Score |
-|-------|-------|--------|-------|
-| Tester vs Devs | Volley | Finished | 21 - 11 |
-| Tester2 vs Devs2 | Volley | Finished | 21 - 11 |
-| Tester vs Tester2 | Volley | Scheduled | - |
-| Devs vs Devs2 | Volley | Scheduled | - |
+| Match             | Sport | Status | Score | Bracket |
+|-------------------|-------|--------|-------|---------|
+| Losers vs Mahdi | Volley | Finished | 21 - 13 | Losers |
+| Winners vs Bombo | Volley | Finished | 21 - 11 | Finals |
+| Bombo vs Losers | Volley | Finished | 21 - 11 | Semis |
+| Mahdi vs Winners | Volley | Finished | 11 - 21 | Semis |

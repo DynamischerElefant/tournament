@@ -2,6 +2,8 @@ import csv
 import argparse
 import os
 import subprocess
+from collections import defaultdict
+
 
 #teams: list of teams = {color, name, points}
 #matches: list of matches = {team1, team2, sport, status, points1, points2}
@@ -34,30 +36,48 @@ def get_team_index(teams, name):
     return -1
 
 def set_points(teams, matches):
-    for team in teams:
-        team["points"] = 0
+    sports = defaultdict(list)
     for match in matches:
-        if match["points1"] > match["points2"]:
-            idx = get_team_index(teams, match["team1"])
-            if idx != -1:
-               teams[idx]["points"] += 3
-        elif match["points2"] > match["points1"]:
-            idx = get_team_index(teams, match["team2"])
-            if idx != -1:
-                teams[idx]["points"] += 3
-        else:
-            idx1 = get_team_index(teams, match["team1"])
-            idx2 = get_team_index(teams, match["team2"])
-            teams[idx1]["points"] += 1
-            teams[idx2]["points"] += 1
+        sports[match["sport"]].append(match)
+
+    for sport, sport_matches in sports.items():
+        finals = [m for m in sport_matches if m["bracket"] == "Finals" and m["status"] == "Finished"]
+        losers = [m for m in sport_matches if m["bracket"] == "Losers" and m["status"] == "Finished"]
+        semis = [m for m in sport_matches if m["bracket"] == "Semis" and m["status"] == "Finished"]
+
+        if len(semis) < 2 or len(finals) < 1 or len(losers) < 1:
+            continue
+
+        semi_winners, semi_losers = [], []
+        for m in semis:
+            if m["points1"] > m["points2"]:
+                semi_winners.append(m["team1"])
+                semi_losers.append(m["team2"])
+            else:
+                semi_winners.append(m["team2"])
+                semi_losers.append(m["team1"])
+
+        final = finals[0]
+        first = final["team1"] if final["points1"] > final["points2"] else final["team2"]
+        second = final["team2"] if final["points1"] > final["points2"] else final["team1"]
+
+        loser = losers[0]
+        third = loser["team1"] if loser["points1"] > loser["points2"] else loser["team2"]
+        fourth = loser["team2"] if loser["points1"] > loser["points2"] else loser["team1"]
+
+        placements = {first: 3, second: 2, third: 1, fourth: 0}
+        for team in teams:
+            if team["name"] in placements:
+                team["points"] += placements[team["name"]]
+
     return teams
 
 def add_team(teams, name, color, points=0):
     teams.append({"name": name, "color": color, "points": points})
     return teams
 
-def add_match(matches, team1, team2, sport, status, points1=0, points2=0):
-    matches.append({"team1": team1, "team2": team2, "sport": sport, "status": status, "points1": points1, "points2": points2})
+def add_match(matches, team1, team2, sport, status, bracket, points1=0, points2=0):
+    matches.append({"team1": team1, "team2": team2, "sport": sport, "status": status, "bracket": bracket, "points1": points1, "points2": points2})
     return matches
 
 def save_teams_to_csv(teams, filename="teams.csv"):
@@ -70,7 +90,7 @@ def save_teams_to_csv(teams, filename="teams.csv"):
 
 def save_matches_to_csv(matches, filename="matches.csv"):
     with open(filename, "w", newline="") as file:
-        fieldnames = ["team1", "team2", "sport", "status", "points1", "points2"]
+        fieldnames = ["team1", "team2", "sport", "status", "bracket", "points1", "points2"]
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
         for match in matches:
@@ -134,8 +154,8 @@ matchups_page = """
 ---
 
 ## ⚔️ Matchups \n
-| Match             | Sport | Status | Score | 
-|-------------------|-------|--------|-------|
+| Match             | Sport | Status | Score | Bracket |
+|-------------------|-------|--------|-------|---------|
 """
 
 def write_md(teams, matches, output_file="index.md"):
@@ -158,7 +178,7 @@ def write_md(teams, matches, output_file="index.md"):
                 score = f"{match['points1']} - {match['points2']}"
             else:
                 score = "-"
-            file.write(f"| {match['team1']} vs {match['team2']} | {match['sport']} | {match['status']} | {score} |\n")
+            file.write(f"| {match['team1']} vs {match['team2']} | {match['sport']} | {match['status']} | {score} | {match['bracket']} |\n")
 
 def main():
     parser = argparse.ArgumentParser(description="🎮 Tournament Manager CLI")
@@ -193,7 +213,9 @@ def main():
         team1 = input("Team 1: ")
         team2 = input("Team 2: ")
         sport = input("Sport: ")
-        matches = add_match(matches, team1, team2, sport, status="Scheduled")
+        bracket = input("Bracket: ")
+        status = "Scheuduled"
+        matches = add_match(matches, team1, team2, sport, status, bracket)
 
     elif args.update_score:
         matches = update_match_score(matches)
