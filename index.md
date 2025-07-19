@@ -1,9 +1,14 @@
 # 🏆 Tournament
 ## 🏅 Player Rankings
 
-**Minh: 0 Points**
+**Minh: 3 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 0.0%; background-color: red; height: 100%; border-radius: 8px;"></div>
+  <div style="width: 15.0%; background-color: red; height: 100%; border-radius: 8px;"></div>
+</div>
+            
+**Philip: 3 Points**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 15.0%; background-color: coral; height: 100%; border-radius: 8px;"></div>
 </div>
             
 **Mahdi: 0 Points**
@@ -41,11 +46,6 @@
   <div style="width: 0.0%; background-color: seagreen; height: 100%; border-radius: 8px;"></div>
 </div>
             
-**Philip: 0 Points**
-<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 0.0%; background-color: coral; height: 100%; border-radius: 8px;"></div>
-</div>
-            
 **Emil: 0 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
   <div style="width: 0.0%; background-color: gold; height: 100%; border-radius: 8px;"></div>
@@ -58,3 +58,5 @@
 
 | Team 1                | Team 2                | Sport     | Status   | Score     |
 |-----------------------|-----------------------|-----------|----------|-----------|
+| Anh Tuan & Daniel     | Leon & Marcel         | Volley    | Scheduled | -         |
+| Mahdi & Raphi         | Philip & Minh         | Volley    | Finished | 8 - 10    |
