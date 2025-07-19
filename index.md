@@ -16,6 +16,11 @@
   <div style="width: 45.0%; background-color: red; height: 100%; border-radius: 8px;"></div>
 </div>
             
+**Mahdi: 9 Points**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 45.0%; background-color: tomato; height: 100%; border-radius: 8px;"></div>
+</div>
+            
 **Daniel: 9 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
   <div style="width: 45.0%; background-color: purple; height: 100%; border-radius: 8px;"></div>
@@ -26,14 +31,14 @@
   <div style="width: 45.0%; background-color: seagreen; height: 100%; border-radius: 8px;"></div>
 </div>
             
-**Mahdi: 6 Points**
-<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 30.0%; background-color: tomato; height: 100%; border-radius: 8px;"></div>
-</div>
-            
 **Raphi: 6 Points**
 <div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
   <div style="width: 30.0%; background-color: lime; height: 100%; border-radius: 8px;"></div>
+</div>
+            
+**Lauber: 6 Points**
+<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
+  <div style="width: 30.0%; background-color: orange; height: 100%; border-radius: 8px;"></div>
 </div>
             
 **Emil: 6 Points**
@@ -46,11 +51,6 @@
   <div style="width: 15.0%; background-color: navy; height: 100%; border-radius: 8px;"></div>
 </div>
             
-**Lauber: 3 Points**
-<div style="background-color: #eee; border-radius: 8px; width: 100%; height: 20px;">
-  <div style="width: 15.0%; background-color: orange; height: 100%; border-radius: 8px;"></div>
-</div>
-            
 ---
 
 ## ⚔️ Matchups 
@@ -58,6 +58,8 @@
 
 | Team 1                | Team 2                | Sport     | Status   | Score     |
 |-----------------------|-----------------------|-----------|----------|-----------|
+| Raphi & Marcel        | Minh & Daniel         | Fifa      | Scheduled | -         |
+| Lauber & Mahdi        | Emil & Philip         | Fifa      | Finished | 3 - 0     |
 | Lauber &              | Marcel &              | Ball      | Finished | 3 - 1     |
 | Daniel & Leon         | Anh Tuan & Emil       | Ball      | Finished | 3 - 1     |
 | Mahdi & Minh          | Raphi & Philip        | Ball      | Finished | 3 - 1     |
